@@ -19,7 +19,7 @@ class ValidatSession
 
         if ($request->session()->missing('key')) {
            
-            return redirect('add/student_form');
+            return redirect('view/student');
         }
 
         return $next($request);
